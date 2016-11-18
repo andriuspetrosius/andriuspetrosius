@@ -1,0 +1,28 @@
+{
+  "name": "ablefinder",
+  "version": "1.0.0",
+  "description": "ablefinder markups repository",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yon64@bitbucket.org/remotehackers/ablefinder.git"
+  },
+  "author": "Yura Borue, Yonathan Pineda",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/remotehackers/ablefinder#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "0.0.14",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "jquery": "^3.1.1"
+  }
+}

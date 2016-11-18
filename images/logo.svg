@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>AP 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="72" height="72"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="72" height="72" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main-Copy" transform="translate(-70.000000, -53.000000)">
+            <g id="Top-menu" transform="translate(70.000000, 53.000000)">
+                <g id="AP-1">
+                    <path d="M27.194,33 L30.834,33 L24.672,14.8 L21.292,14.8 L15.13,33 L18.77,33 L20.096,28.71 L25.868,28.71 L27.194,33 Z M22.982,19.272 L24.906,25.59 L21.058,25.59 L22.982,19.272 Z" id="A" fill="#000000"></path>
+                    <path d="M51.204,49.876 C55.052,49.876 56.898,47.51 56.898,44.338 C56.898,41.166 55.052,38.8 51.204,38.8 L44.34,38.8 L44.34,57 L47.72,57 L47.72,49.876 L51.204,49.876 Z M51.074,46.756 L47.72,46.756 L47.72,41.92 L51.074,41.92 C52.556,41.92 53.466,42.674 53.466,44.338 C53.466,46.002 52.556,46.756 51.074,46.756 Z" id="P" fill="#000000"></path>
+                    <use id="Rectangle-3" stroke="#000000" mask="url(#mask-2)" stroke-width="8" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

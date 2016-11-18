@@ -1,0 +1,303 @@
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "grid";
+@import "responsive-utilities";
+@import "jquery.fullpage";
+
+html, body {
+    font-family: ApercuPro;
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden !important;
+}
+body {
+    @media (max-width: $screen-md-min) {
+        margin-top: 30px;
+    }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.clear {
+    clear:both;
+}
+header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: block;
+    padding: 70px 60px 0 60px;
+    width: 100%;
+    nav {
+        .nav-left {
+            float: left;
+        }
+        .nav-right {
+            float: right;
+        }
+        .btn {
+            height: 60px;
+            padding: 15px 23px;
+        }
+    }
+    .nav-logo {
+        margin: 0;
+        height: 60px;
+        width: 60px;
+        background-image: url(../images/logo.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media (max-width: $screen-md-min) {
+            height: 30px;
+            width: 30px;
+            margin-left: -30px;
+        }
+    }
+    .mobile-nav {
+        text-align: center;
+        .nav-burger {
+            margin: 0;
+            height: 30px;
+            width: 30px;
+            background-image: url(../images/burger.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            float: left;
+        }
+        .mobile-menu {
+            height: 0;
+            overflow: hidden;
+            opacity: 0;
+            padding-top:20px;
+            transition: all 1s ease-out;
+            background: white;
+            a {
+                display:block;
+            }
+            &.mobile-menu-visible {
+                height: auto;
+                opacity: 1;
+            }
+        }
+    }
+    @media (max-width: $screen-md-min) {
+        background: white;
+        padding: 15px 15px 0 15px;
+    }
+}
+.main-section {
+    .pic-photo {
+        background-image: url(../images/photo.png);
+        background-position: center;
+    }
+    .pic-emp {
+        background-image: url(../images/emp.png);
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/emp@2x.png);
+        }
+    }
+    .pic-jet {
+        background-image: url(../images/jet.png);
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/jet@2x.png);
+        }
+    }
+    .pic-caarty {
+        background-image: url(../images/caarty.png);
+        background-position: top right;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/caarty@2x.png);
+        }
+    }
+    .pic-benfit {
+        background-image: url(../images/benfit.png);
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/benfit@2x.png);
+        }
+    }
+    .pic-transportapp {
+        background-image: url(../images/transportapp.png);
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/transportapp@2x.png);
+        }
+    }
+    .pic-surence {
+        background-image: url(../images/surence.png);
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/surence@2x.png);
+        }
+    }
+    .pic-airports {
+        background-image: url(../images/airports.png);
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/airports@2x.png);
+        }
+    }
+    .pic-ablefinder {
+        background-image: url(../images/ablefinder.png);
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/ablefinder@2x.png);
+        }
+    }
+    .pic-younico {
+        background-image: url(../images/younico.png);
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/younico@2x.png);
+        }
+    }
+    .slide {
+        .fullheight {
+            height: 100%;
+            @media (max-width: $screen-md-min) {
+                height: auto;
+            }
+        }
+        .gap-img {
+            padding-top: 135px;
+            height: 100%;
+            @media (max-width: $screen-md-min) {
+                height: auto;
+            }
+            > div {
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                background-position: center right;
+                @media (max-width: $screen-md-min) {
+                    height: 200px !important;
+                    padding: 20px !important;
+                    background-position: center;
+                    background-size: contain;
+                }
+            }
+            @media (max-width: $screen-md-min) {
+                padding-top: 20px !important;
+                margin: 15px;
+            }
+        }
+        .gap-text {
+            @media (max-width: $screen-md-min) {
+                padding-top: 0px;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin:: 15px;
+            }
+            padding-top: 200px;
+            padding-right: 30px;
+            p {
+                @media (max-width: $screen-md-min) {
+                    padding-left: 0;
+                }
+                padding-left: 20px;
+            }
+        }
+        a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}
+.btn {
+    display: inline-block;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: none;
+    &.btn-border {
+        border: solid 4px #000000;
+    }
+}
+
+.indicator {
+    position: fixed;
+    display: block;
+    right: 0;
+    height: 10px;
+    width: 50%;
+    top: 180px;
+    hr {
+        border-color: #cccccc;
+        border-top: none;
+        margin: 0;
+    }
+    .indicator-marker {
+        width: 40px;
+    	height: 8px;
+        margin-top: -4px;
+    	background-color: #000000;
+        transition: all 0.7s ease-out 0.1s;
+    }
+}
+.signature {
+    display: inline-block;
+    vertical-align: text-top;
+    float: right;
+    @media (max-width: $screen-md-min) {
+    }
+    img {
+        width: 101px;
+        height: 115px;
+    }
+}
+.row-contact {
+    text-align:center;
+    a {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1.2;
+        color:black;
+        &:hover,&:active {
+            color:black;
+        }
+    }
+    .center-contact {
+        @media (max-width: $screen-md-min) {
+            margin: 75px 0;
+        }
+    }
+}
+header,.indicator {
+    transition: visibility 0.6s, opacity 0.6s linear;
+}
+.fp-viewing-contact {
+    header,.indicator {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+.main-section .slide.slide-about .gap-img div {
+    background-position: center center;
+}
+.main-section .slide.slide-emp .gap-img {
+    padding-top: 150px;
+    padding-bottom: 25px;
+}
+.main-section .slide.slide-caarty .gap-img {
+    padding-top: 150px;
+    padding-bottom: 25px;
+}
+.main-section .slide.slide-transportapp .gap-img {
+    padding-top: 150px;
+    padding-bottom: 25px;
+}
+.main-section .slide.slide-surence .gap-img {
+    padding-top: 150px;
+    padding-bottom: 25px;
+}
+.main-section .slide.slide-ablefinder .gap-img {
+    padding-top: 150px;
+    padding-bottom: 25px;
+}
