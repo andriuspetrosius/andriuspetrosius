@@ -16,7 +16,7 @@ $(document).ready(function() {
         css3: true,
         scrollingSpeed: 700,
         responsiveSlides: true,
-//        responsiveWidth: 992,
+        responsiveHeight: 500,
         onLeave: function(index, nextIndex, direction){
             indicatorSet(slides[nextIndex-1]);
         }
