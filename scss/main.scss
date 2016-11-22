@@ -195,11 +195,20 @@ header {
             }
             padding-top: 200px;
             padding-right: 30px;
+            h2 {
+                font-size: 34px;
+                @media (max-width: $screen-md-min) {
+                    font-size: 22px;
+                }
+            }
             p {
                 @media (max-width: $screen-md-min) {
                     padding-left: 0;
+                    font-size: 16px;
                 }
                 padding-left: 20px;
+                line-height: 1.7;
+                font-size: 28px;
             }
         }
         a {
@@ -218,6 +227,8 @@ header {
     text-decoration: none;
     &.btn-border {
         border: solid 4px #000000;
+        font-size: 24px;
+        padding: 9px 23px;
     }
 }
 
