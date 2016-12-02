@@ -311,3 +311,54 @@ header,.indicator {
     padding-top: 150px;
     padding-bottom: 25px;
 }
+
+
+
+
+
+
+
+
+
+.fp-slidesContainer {
+	width: 100%!important;
+	transform: none!important;
+}
+
+.fp-slide {
+/*    transform: translateY(100px);
+    transition: all 2s ease-in-out;*/
+    .gap-text, .row-contact {
+        color: white !important;
+    	transition: all 1.5s ease-in-out;
+        a {
+            transition: all 1.5s ease-in-out;
+            color: white !important;
+        }
+        .signature {
+            opacity: 0;
+            transition: all 1.5s ease-in-out;
+        }
+    }
+    .gap-img {
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+    }
+
+}
+
+.fp-slide.active {
+/*    transform: none;*/
+    .gap-img {
+        opacity: 1;
+    }
+    .gap-text, .row-contact {
+        color: black  !important;
+        a {
+            color: black  !important;
+        }
+        .signature {
+            opacity: 1;
+        }
+    }
+}
