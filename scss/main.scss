@@ -98,9 +98,9 @@ header {
 }
 
 @mixin slide-bg-mixin($name) {
-    background-image: url(../images/#{$name}.png);
+    background-image: url(../images/web/#{$name}.png);
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        background-image: url(../images/#{$name}@2x.png);
+        background-image: url(../images/web/#{$name}@2x.png);
     }
     @media (max-width: $screen-md-min) {
         background-image: url(../images/mobile/#{$name}.png);
@@ -111,9 +111,9 @@ header {
 }
 .main-section {
     .pic-photo {
-        background-image: url(../images/photo.png);
+        background-image: url(../images/web/photo.png);
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            background-image: url(../images/photo@2x.png);
+            background-image: url(../images/web/photo@2x.png);
         }
     }
     .pic-emp {
@@ -132,7 +132,7 @@ header {
         @include slide-bg-mixin('transportapp');
     }
     .pic-surence {
-        @include slide-bg-mixin('surance');
+        @include slide-bg-mixin('surence');
     }
     .pic-airports {
         @include slide-bg-mixin('airports');
