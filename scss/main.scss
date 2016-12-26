@@ -96,65 +96,52 @@ header {
         padding: 15px 15px 0 15px;
     }
 }
+
+@mixin slide-bg-mixin($name) {
+    background-image: url(../images/#{$name}.png);
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: url(../images/#{$name}@2x.png);
+    }
+    @media (max-width: $screen-md-min) {
+        background-image: url(../images/mobile/#{$name}.png);
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/mobile/#{$name}@2x.png);
+        }
+    }
+}
 .main-section {
     .pic-photo {
         background-image: url(../images/photo.png);
-        background-position: center;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/photo@2x.png);
+        }
     }
     .pic-emp {
-        background-image: url(../images/emp.png);
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            background-image: url(../images/emp@2x.png);
-        }
+        @include slide-bg-mixin('emp');
     }
     .pic-jet {
-        background-image: url(../images/jet.png);
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            background-image: url(../images/jet@2x.png);
-        }
+        @include slide-bg-mixin('jet');
     }
     .pic-caarty {
-        background-image: url(../images/caarty.png);
-        background-position: top right;
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            background-image: url(../images/caarty@2x.png);
-        }
+        @include slide-bg-mixin('caarty');
     }
     .pic-benfit {
-        background-image: url(../images/benfit.png);
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            background-image: url(../images/benfit@2x.png);
-        }
+        @include slide-bg-mixin('benfit');
     }
     .pic-transportapp {
-        background-image: url(../images/transportapp.png);
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            background-image: url(../images/transportapp@2x.png);
-        }
+        @include slide-bg-mixin('transportapp');
     }
     .pic-surence {
-        background-image: url(../images/surence.png);
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            background-image: url(../images/surence@2x.png);
-        }
+        @include slide-bg-mixin('surance');
     }
     .pic-airports {
-        background-image: url(../images/airports.png);
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            background-image: url(../images/airports@2x.png);
-        }
+        @include slide-bg-mixin('airports');
     }
     .pic-ablefinder {
-        background-image: url(../images/ablefinder.png);
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            background-image: url(../images/ablefinder@2x.png);
-        }
+        @include slide-bg-mixin('ablefinder');
     }
     .pic-younico {
-        background-image: url(../images/younico.png);
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            background-image: url(../images/younico@2x.png);
-        }
+        @include slide-bg-mixin('younico');
     }
     .slide {
         .fullheight {
@@ -288,6 +275,7 @@ header,.indicator {
         opacity: 0;
     }
 }
+/*
 .main-section .slide.slide-about .gap-img div {
     background-position: center center;
 }
@@ -310,13 +298,7 @@ header,.indicator {
 .main-section .slide.slide-ablefinder .gap-img {
     padding-top: 150px;
     padding-bottom: 25px;
-}
-
-
-
-
-
-
+}*/
 
 
 
