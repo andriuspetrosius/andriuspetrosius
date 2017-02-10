@@ -1,2 +1,5 @@
 node_modules
 .DB_store
+js/parts/vendor/
+design/
+

@@ -1,7 +1,18 @@
 @font-face {
-    font-family: ApercuPro;
-    src: url('../fonts/apercurpro-regular/apercu_regular_pro.otf');
+	font-family: 'ApercuPro';
+	src: url('../fonts/apercu_regular_pro.eot');
+	src: local('☺'), url('../fonts/apercu_regular_pro.woff') format('woff'), url('../fonts/apercu_regular_pro.ttf') format('truetype'), url('../fonts/apercu_regular_pro.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
+@font-face {
+    font-family: 'ApercuPro';
+	src: url('fonts/apercu_bold_pro.eot');
+	src: local('☺'), url('../fonts/apercu_bold_pro.woff') format('woff'), url('../fonts/apercu_bold_pro.ttf') format('truetype'), url('../fonts/apercu_bold_pro.svg') format('svg');
+	font-weight: bold;
+	font-style: bold;
+}
+
 
 @import "normalize";
 @import "variables";
