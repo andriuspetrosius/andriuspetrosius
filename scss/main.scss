@@ -1,3 +1,8 @@
+@font-face {
+    font-family: ApercuPro;
+    src: url('../fonts/apercurpro-regular/apercu_regular_pro.otf');
+}
+
 @import "normalize";
 @import "variables";
 @import "mixins";
@@ -64,6 +69,7 @@ header {
     }
     .mobile-nav {
         text-align: center;
+        height: 100%;
         .nav-burger {
             margin: 0;
             height: 30px;
@@ -77,17 +83,24 @@ header {
         }
         .mobile-menu {
             height: 0;
+            width: 0;
             overflow: hidden;
             opacity: 0;
             padding-top:20px;
-            transition: all 1s ease-out;
+            transition: width 0.5s ease-in-out;
             background: white;
             a {
                 display:block;
             }
             &.mobile-menu-visible {
-                height: auto;
+                height: 100%;
+                width: 100%;
                 opacity: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-items: center;
             }
         }
     }
@@ -343,4 +356,8 @@ header,.indicator {
             opacity: 1;
         }
     }
+}
+
+.mobile-menu-opened {
+    height: 100%;
 }

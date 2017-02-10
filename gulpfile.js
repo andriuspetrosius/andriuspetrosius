@@ -7,7 +7,7 @@ var rename = require('gulp-rename');
 var minify = require('gulp-minify');
 var autoprefixer = require('gulp-autoprefixer');
 
-var jsFiles = ['js/parts/vendor/*.js','js/parts/app.js'],
+var jsFiles = ['js/parts/vendor/jquery-3.1.1.min.js','js/parts/vendor/fullpage.fadingEffect.min.js','js/parts/vendor/jquery.fullpage.extensions.min.js', 'js/parts/app.js'],
     jsDest = 'js/';
 
 gulp.task('sass', function () {
