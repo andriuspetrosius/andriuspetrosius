@@ -42,7 +42,7 @@ $(document).ready(function() {
         responsiveSlides: true,
         responsiveHeight: 500,
         fadingEffect: true,
-        fadingEffectKey: '3F138581-82E444B9-8A995784-6ADFE7C5',
+        fadingEffectKey: 'YW5kcml1c3BldHJvc2l1cy5jb21fekc2Wm1Ga2FXNW5SV1ptWldOMDRLNg==',
         onLeave: function(index, nextIndex, direction){
             indicatorSet(slides[nextIndex-1]);
         },
