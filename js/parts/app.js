@@ -1,4 +1,3 @@
-console.log('start');
 $(document).ready(function() {
     var slides = $('#fullpage').children().map(function() { return $(this).data('anchor') }).toArray();
     var indicatorWidth = $('#indicator').width();
@@ -6,7 +5,11 @@ $(document).ready(function() {
     var indicatorSet = function(hash) {
         if (!hash)
             hash = slides[0];
-        var index = slides.findIndex(function(el) { return el == hash; });
+        var index = -1;
+        $.each(slides, function(key, val) {
+            if (val == hash)
+                index = key;
+        });
         if (index == -1)
             return false;
         var margin = index*indicatorStep;
