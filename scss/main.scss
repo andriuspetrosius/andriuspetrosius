@@ -300,6 +300,21 @@ header,.indicator {
         opacity: 0;
     }
 }
+@media (max-width: $screen-md-min) {
+	body.fp-viewing-about {
+		background-image: url(../images/mobile/aboutbg.png);
+		background-size: contain;
+	    background-position-x: left;
+	    background-position-y: bottom;
+	    background-repeat: no-repeat;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/mobile/aboutbg@2x.png);
+        }
+		#mainHeader {
+			background: none;
+		}
+	}
+}
 /*
 .main-section .slide.slide-about .gap-img div {
     background-position: center center;
