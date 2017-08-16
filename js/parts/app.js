@@ -33,11 +33,11 @@ $(document).ready(function() {
       indicatorSet(location.hash.replace('#',''));
   });*/
     indicatorSet(location.hash.replace('#',''));
-
+/*
     $('#liveclick').on('click', function() {
         userengage('widget.open');
         return false;
-    });
+    });*/
     $('#mobileMenuBtn').on('click', function() {
         $('#mobileMenu').toggleClass('mobile-menu-visible');
         $('#mainHeader').toggleClass('mobile-menu-opened');
