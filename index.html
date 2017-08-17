@@ -23,9 +23,6 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     </head>
     <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
         <header id="mainHeader">
             <nav class="hidden-xs hidden-sm">
                 <div class="nav-left">
@@ -58,9 +55,11 @@
             <hr>
             <div id="indicatorMarker" class="indicator-marker"></div>
         </div>
-        <div class="ie-error" style="display: none;">
-            Unfortunately this website does not support Internet Explorer browser...
-        </div>
+        <!--[if IE]>
+            <div class="ie-error">
+                Unfortunately this website does not support Internet Explorer browser...
+            </div>
+        <![endif]-->
         <section class="main-section" id="fullpage">
             <div class="section slide slide-about" data-anchor="about">
                 <div class="row fullheight">
