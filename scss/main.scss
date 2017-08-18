@@ -369,7 +369,11 @@ header,.indicator {
         opacity: 0;
         transition: all 1.5s ease-in-out;
     }
+}
 
+.section.slide.slide-hidden {
+	visibility: hidden !important;
+	opacity: 0 !important;
 }
 
 .fp-slide.active {
