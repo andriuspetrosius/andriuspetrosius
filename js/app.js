@@ -43,7 +43,7 @@ $(document).ready(function() {
         css3: true,
         scrollingSpeed: SCROLLING_SPEED,
         responsiveSlides: true,
-        responsiveHeight: 500,
+//      responsiveHeight: 500,
         fadingEffect: true,
         fadingEffectKey: 'YW5kcml1c3BldHJvc2l1cy5jb21fekc2Wm1Ga2FXNW5SV1ptWldOMDRLNg==',
         onLeave: function(index, nextIndex, direction){
