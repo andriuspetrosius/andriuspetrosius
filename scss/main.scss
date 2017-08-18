@@ -197,7 +197,12 @@ header {
                     padding: 20px !important;
                     background-position: center;
                     background-size: contain;
+					@media screen and ( max-height: 500px ) {
+						height: 150px !important;
+	                    padding: 10px !important;
+					}
                 }
+
             }
             @media (max-width: $screen-md-min) {
                 padding-top: 20px !important;
@@ -251,6 +256,9 @@ header {
 }
 
 .indicator {
+	@media (max-width: $screen-md-min) {
+		display: none !important;
+	}
     position: fixed;
     display: block;
     right: 0;
